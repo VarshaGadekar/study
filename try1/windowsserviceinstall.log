@@ -1,0 +1,114 @@
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service> rmdir .\build\
+
+Confirm
+The item at C:\applegreen\integrationhub\flooid\flooid_integration_service\build\ has children and the Recurse parameter was not specified. If you continue, all children
+will be removed with the item. Are you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service> rmdir .\dist\
+
+Confirm
+The item at C:\applegreen\integrationhub\flooid\flooid_integration_service\dist\ has children and the Recurse parameter was not specified. If you continue, all children
+will be removed with the item. Are you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+
+######################################################################################
+
+
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service> pyinstaller.exe --hiddenimport win32timezone -F .\flooid_bos_publish_receiver_service.py
+87 DEPRECATION: Running PyInstaller as admin is not necessary nor sensible. Run PyInstaller from a non-administrator terminal. PyInstaller 7.0 will block this.
+451 INFO: PyInstaller: 6.12.0, contrib hooks: 2025.1
+451 INFO: Python: 3.12.9
+501 INFO: Platform: Windows-11-10.0.22631-SP0
+501 INFO: Python environment: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0
+501 INFO: wrote C:\applegreen\integrationhub\flooid\flooid_integration_service\flooid_bos_publish_receiver_service.spec
+518 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\VGadekar\\AppData\\Local\\Packages\\pythonsoftwarefoundation.python.3.12_qbz5n2kfra8p0\\localcache\\local-packages\\python312\\scripts\\pyinstaller.exe',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\\python312.zip',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\\DLLs',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\\Lib',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0',
+ 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages',
+ 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32',
+ 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32\\lib',
+ 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\Pythonwin',
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages',
+ 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor',
+ 'C:\\applegreen\\integrationhub\\flooid\\flooid_integration_service']
+1456 INFO: checking Analysis
+1456 INFO: Building Analysis because Analysis-00.toc is non existent
+1456 INFO: Running Analysis Analysis-00.toc
+1459 INFO: Target bytecode optimization level: 0
+1459 INFO: Initializing module dependency graph...
+1460 INFO: Initializing module graph hook caches...
+1507 INFO: Analyzing modules for base_library.zip ...
+4427 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+4490 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+6407 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+7508 INFO: Caching module dependency graph...
+7537 INFO: Looking for Python shared library...
+7537 INFO: Using Python shared library: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\python312.dll
+7537 INFO: Analyzing C:\applegreen\integrationhub\flooid\flooid_integration_service\flooid_bos_publish_receiver_service.py
+C:\applegreen\integrationhub\flooid\flooid_integration_service\flooid_bos_publish_receiver_service.py:1: SyntaxWarning: invalid escape sequence '\W'
+  """
+7569 INFO: Processing standard module hook 'hook-pywintypes.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+8026 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8026 INFO: SetuptoolsInfo: initializing cached setuptools info...
+11834 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+11860 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+12079 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+12726 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks'
+13342 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+13405 INFO: Processing standard module hook 'hook-cryptography.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+15834 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+16102 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+17188 INFO: Analyzing hidden import 'win32timezone'
+17204 INFO: Processing module hooks (post-graph stage)...
+17251 INFO: Performing binary vs. data reclassification (11 entries)
+17254 INFO: Looking for ctypes DLLs
+17266 INFO: Analyzing run-time hooks ...
+17266 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks'
+17266 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks'
+17266 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks'
+17282 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+17282 INFO: Including run-time hook 'pyi_rth_pywintypes.py' from 'C:\\Users\\VGadekar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+17282 INFO: Creating base_library.zip...
+17346 INFO: Looking for dynamic libraries
+19046 INFO: Extra DLL search directories (AddDllDirectory): []
+19046 INFO: Extra DLL search directories (PATH): []
+19648 INFO: Warnings written to C:\applegreen\integrationhub\flooid\flooid_integration_service\build\flooid_bos_publish_receiver_service\warn-flooid_bos_publish_receiver_service.txt
+19677 INFO: Graph cross-reference written to C:\applegreen\integrationhub\flooid\flooid_integration_service\build\flooid_bos_publish_receiver_service\xref-flooid_bos_publish_receiver_service.html
+19716 INFO: checking PYZ
+19716 INFO: Building PYZ because PYZ-00.toc is non existent
+19716 INFO: Building PYZ (ZlibArchive) C:\applegreen\integrationhub\flooid\flooid_integration_service\build\flooid_bos_publish_receiver_service\PYZ-00.pyz
+20302 INFO: Building PYZ (ZlibArchive) C:\applegreen\integrationhub\flooid\flooid_integration_service\build\flooid_bos_publish_receiver_service\PYZ-00.pyz completed successfully.
+20308 INFO: checking PKG
+20308 INFO: Building PKG because PKG-00.toc is non existent
+20308 INFO: Building PKG (CArchive) flooid_bos_publish_receiver_service.pkg
+C:\applegreen\integrationhub\flooid\flooid_integration_service\flooid_bos_publish_receiver_service.py:1: SyntaxWarning: invalid escape sequence '\W'
+  """
+23366 INFO: Building PKG (CArchive) flooid_bos_publish_receiver_service.pkg completed successfully.
+23371 INFO: Bootloader C:\Users\VGadekar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+23371 INFO: checking EXE
+23371 INFO: Building EXE because EXE-00.toc is non existent
+23375 INFO: Building EXE from EXE-00.toc
+23375 INFO: Copying bootloader EXE to C:\applegreen\integrationhub\flooid\flooid_integration_service\dist\flooid_bos_publish_receiver_service.exe
+23387 INFO: Copying icon to EXE
+23399 INFO: Copying 0 resources to EXE
+23399 INFO: Embedding manifest in EXE
+23415 INFO: Appending PKG archive to EXE
+23462 INFO: Fixing EXE headers
+23746 INFO: Building EXE from EXE-00.toc completed successfully.
+23762 INFO: Build complete! The results are available in: C:\applegreen\integrationhub\flooid\flooid_integration_service\dist
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service>
+
+######################################################################################
+
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service> .\dist\flooid_bos_publish_receiver_service.exe install
+Installing service FlooidBosPublishReceiver
+Service installed
+PS C:\applegreen\integrationhub\flooid\flooid_integration_service>
